@@ -31,16 +31,47 @@
             color: #555;
             margin-top: 5px;
         }
+        .house-image {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        .rsvp-form {
+            margin-top: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            width: 90%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #d35400;
+            color: white;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>House Warming Ceremony</h1>
+        <img src="house-image.jpg" alt="House Image" class="house-image">
         <p>We are delighted to invite you to the housewarming ceremony of</p>
         <h2>Shoba & Iranna Harakuni</h2>
         <p class="date">on March 30 & 31, 2025</p>
         <p class="address">2182/6, Ramnagar, K.H. Kangrali, APMC Road, Belagavi, Karnataka</p>
         <p>We look forward to your presence and blessings.</p>
+        
+        <div class="rsvp-form">
+            <h3>Confirm Your Presence</h3>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required><br>
+                <input type="email" name="email" placeholder="Your Email" required><br>
+                <input type="text" name="phone" placeholder="Your Phone Number" required><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
